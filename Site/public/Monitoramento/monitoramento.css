@@ -30,18 +30,27 @@ body {
   border-radius: 50%;
 }
 
-#username {
+.username {
   background-color: #ffffff23;
   width: 145%;
   height: 70px;
   align-items: center;
   border-top: #3d7738;
-  font-size: 24px;
-  text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 15px;
+}
+
+.username h1 {
+  font-size: x-large;
+  margin: 2px;
+}
+
+.username h2 {
+  font-size: small;
+  font-weight: 100;
+  margin: 0%;
 }
 
 .navbarra {
@@ -130,15 +139,13 @@ li a {
 }
 
 .ola {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   height: 50px;
-  width: auto;
-  max-width: 60%;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
   justify-content: space-evenly;
   box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.205);
 }

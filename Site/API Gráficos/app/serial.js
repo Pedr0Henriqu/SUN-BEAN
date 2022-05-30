@@ -37,7 +37,7 @@ class ArduinoDataRead {
      */
     fake_data(){
         setInterval(() => {
-            let data_float = sensors.dht11({minHum:50, maxHum:100, minTemp:0, maxTemp:15});
+            let data_float = sensors.dht11({minHum:50, maxHum:100, minTemp:0, maxTemp:40});
             let data_int = sensors.pessoas();
             let data_lux = sensors.ldr();
 

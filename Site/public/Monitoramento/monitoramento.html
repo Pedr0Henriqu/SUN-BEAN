@@ -46,7 +46,7 @@
       <img class="idvisual" src="../assets/Identidade Visual/Logo PNG.png">
       <div class="separador"></div>
       <h4 id="bemvindo"></h4>
-  </div>
+    </div>
 
     <div class="container">
 
@@ -55,11 +55,15 @@
         <div class="div_alertas">
 
           <div class="container">
-            <span id="medida_temp">
-              ºC
-            </span>
 
-            <img src="../assets/Identidade Visual/icon-temp.png" class="icone_termometro" >
+            <div class="div_celsius">
+              <span id="medida_temp"></span>
+              <span class="celsius">
+                ºC
+              </span>
+            </div>
+
+            <img src="../assets/Identidade Visual/icon-temp.png" class="icone_termometro">
           </div>
 
           <div id="tooltip_temp">
@@ -69,7 +73,7 @@
             </h1>
 
             <span id="text_temp">
-              Sem fonte de dados 
+              Sem fonte de dados
             </span>
 
             <img src="../assets/Identidade Visual/alerta.png" class="alerta" id="temp_alerta">
@@ -80,9 +84,12 @@
 
           <div class="container">
 
-            <span id="medida_umid">
-              %
-            </span>
+            <div class="div_celsius">
+              <span id="medida_umid"></span>
+              <span class="celsius">
+                %
+              </span>
+            </div>
 
             <img src="../assets/Identidade Visual/icon-umid.png" class="icone_termometro">
 
@@ -95,7 +102,7 @@
             </h1>
 
             <div id="text_umid">
-              Sem fonte de dados  
+              Sem fonte de dados
             </div>
 
             <img src="../assets/Identidade Visual/alerta.png" class="alerta" id="umid_alerta">
@@ -114,7 +121,7 @@
 </html>
 
 <script>
-    var usuario = sessionStorage.getItem('NOME_USUARIO')
-    username.innerHTML = usuario[0].toLocaleUpperCase() + usuario.substr(1); // esta formatado para a primeira letra ser Maiuscula
-    bemvindo.innerHTML = `Olá, <b>${usuario[0].toLocaleUpperCase() + usuario.substr(1)}</b>. Seja bem-vindo(a)!`
+  var usuario = sessionStorage.getItem('NOME_USUARIO')
+  username.innerHTML = usuario[0].toLocaleUpperCase() + usuario.substr(1); // esta formatado para a primeira letra ser Maiuscula
+  bemvindo.innerHTML = `Olá, <b>${usuario[0].toLocaleUpperCase() + usuario.substr(1)}</b>. Seja bem-vindo(a)!`
 </script>

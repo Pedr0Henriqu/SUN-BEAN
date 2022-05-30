@@ -299,3 +299,14 @@ h3 {
 h1 {
   font-size: medium;
 }
+
+.div_celsius {
+  display: flex;
+}
+
+#medida_temp {
+  margin-right: -15px
+}
+#medida_umid {
+  margin-right: -15px
+}

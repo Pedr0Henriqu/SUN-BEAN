@@ -345,6 +345,11 @@ button {
   width: 100%;
 }
 
+#menu_monitoramento {
+  color: white;
+  margin-left: 8px;
+}
+
 th,
 td {
   padding: 10px;

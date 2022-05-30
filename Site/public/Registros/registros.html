@@ -28,9 +28,9 @@
                 <!-- <h2>Usuário Secundário</h2> -->
             </div>
             <ul class="navbarra">
+                <li><a href="../Plantações/plantacoes.html">Plantações</a></li>
                 <li><a href="../Monitoramento/monitoramento.html">Monitoramento</a></li>
                 <li class="ativa">Registros</li>
-                <li><a href="../Plantações/plantacoes.html">Plantações</a></li>
                 <li><a href="../acesso/acesso.html">Acesso</a></li>
             </ul>
             <div class="logout" onclick="limparSessao()">
@@ -48,29 +48,6 @@
         </div>
 
         <div class="container">
-            <div class="embaixo">
-                <div class="registros">
-                    <span class="texto" id="texto">
-                        <div class="ipts"> Última irrigação:
-                            <input id="ipt_i_hr" type="number" placeholder="00" class="horas">:
-                            <input id="ipt_i_mnt" type="number" placeholder="00">
-                        </div><br>
-                        <br>
-                        Os níveis de umidade permaneceram satisfatórios por <u>x</u> horas.
-                    </span>
-                </div>
-                <div class="div_registrar">
-                    <h1>
-                        Registrar alerta
-                    </h1>
-                    <div class="ipts">
-                        <input type="number" id="ipt_a_hr" placeholder="00">:
-                        <input type="number" id="ipt_a_mnt" placeholder="00">
-                    </div>
-                    </form>
-                    <button onclick="obterDadosGrafico(1)">Registrar</button>
-                </div>
-            </div>
 
             <div class="graficos">
                 <div class="div_dashboard">
@@ -80,11 +57,25 @@
                     </div>
                 </div>
 
-                <!-- <div class="div_dashboard">
+                <div class="nome_plantio">
+                    <h3>Plantio 1</h3>
+                </div>
+
+                <div class="div_dashboard2">
                     <div>
                         <canvas id="grafico_barra" style="position: relative; height:30vh; width:30vw"></canvas>
                     </div>
-                </div> -->
+
+                    <div id="text_temp">
+                        Sem fonte de dados
+                    </div>
+
+                </div>
+
+                <div class="nome_plantio">
+                    <h3>Plantio 2</h3>
+                </div>
+
             </div>
         </div>
     </div>

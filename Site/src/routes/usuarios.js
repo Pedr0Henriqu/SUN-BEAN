@@ -40,7 +40,7 @@ router.post("/novasenha", function (req, res) {
     usuarioController.novasenha(req, res);
 });
 
-router.get("/listarPlantacoes", function (req, res) {
+router.get("/listarPlantacoes:idUserVar", function (req, res) {
     usuarioController.listarPlantacoes(req, res);
 });
 

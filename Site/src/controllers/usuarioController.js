@@ -242,7 +242,8 @@ function novasenha(req, res) {
 }
 
 function listarPlantacoes(req, res) {
-    usuarioModel.listarPlantacoes()
+    var idUser = req.params.idUserVar
+    usuarioModel.listarPlantacoes(idUser)
         .then(function (resultado) {
             if (resultado.length > 0) {
                 res.status(200).json(resultado);

@@ -87,11 +87,11 @@ function novasenha(email, senha) {
     return database.executar(instrucao);
 }
 
-function listarPlantacoes() {
-    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listar()");
+function listarPlantacoes(idUser) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listar()",idUser);
     var instrucao = `
             select * from plantacao join cliente_plantacao on idPlantacao = fkPlantacao 
-            join usuario on idUsuario = fkUsuario where idUsuario = 1;
+            join usuario on idUsuario = fkUsuario where idUsuario = '${idUser}';
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
